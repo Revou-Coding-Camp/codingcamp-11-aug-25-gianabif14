@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Main">
+      <img src="assets/logo.png" alt="Logo" id="logo" style="width:80px" />
+      <div>
+        <a href="index.html">Home</a>
+        <a href="#home">Our Profile</a>
+        <a href="#headquarters">Portfolio</a>
+        <a href="#message">Message Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home">
+      <div>
+        <h1 id="welcomeTitle" style="font-size:larger">
+          Hi <span id="visitorName" style="font-style:italic">Visitor</span>, Welcome To Website
+        </h1>
+        <p style="font-size:small">Ini adalah website latihan pertama</p>
+      </div>
+    </section>
+
+    <!-- HEADQUARTERS -->
+    <section id="headquarters">
+      <h2 style="font-weight:bold">Our Headquarters</h2>
+      <div class="headquarters-content">
+        <div>
+          <img src="assets/jakarta.png" alt="Jakarta" />
+          <p>Jakarta</p>
+        </div>
+        <div>
+          <img src="assets/bandung.png" alt="Bandung" />
+          <p>Bandung</p>
+        </div>
+        <div>
+          <img src="assets/surabaya.png" alt="Surabaya" />
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MESSAGE US -->
+    <section id="message">
+      <div>
+        <h2>Message Us</h2>
+        <form id="messageForm">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="tglLahir">Tanggal Lahir:</label>
+            <input type="date" id="tglLahir" name="tglLahir" />
+          </div>
+
+          <div>
+            <span>Jenis Kelamin:</span>
+            <input type="radio" id="cowo" name="sex" value="Laki-Laki" />
+            <label for="cowo">Laki-Laki</label>
+            <input type="radio" id="cewe" name="sex" value="Perempuan" />
+            <label for="cewe">Perempuan</label>
+          </div>
+
+          <div>
+            <label for="komentar">Komentar:</label><br />
+            <textarea id="komentar" name="komentar" rows="4" cols="40"></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <h2>Your Identity</h2>
+        <div id="identity">
+          <p>Name: <span id="name1">Visitor</span></p>
+          <p>Tanggal Lahir: <span id="tglLahir1">-</span></p>
+          <p>Jenis Kelamin: <span id="sex1">-</span></p>
+          <p>Komentar: <span id="komentar1">-</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <span>@gianabif14</span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
