@@ -17,7 +17,7 @@ nav a {
 }
 
 #home {
-  background-image: url(/assets/building.png);
+  background-image: url(../assets/building.png);
   background-size: cover;
   background-position: center;
   height: 400px;
