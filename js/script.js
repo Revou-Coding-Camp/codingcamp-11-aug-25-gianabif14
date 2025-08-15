@@ -1,4 +1,4 @@
-// welcome();
+welcome();
 function welcome() {
   const nameGreeting = prompt("Please enter your name:");
   if (nameGreeting) {
